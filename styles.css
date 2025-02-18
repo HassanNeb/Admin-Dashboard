@@ -71,10 +71,6 @@ h1 {
     overflow: hidden;
 }
 
-.projects {
-    background-color: #f6f6f6;
-}
-
 .navbartop,
 .navbarbottom {
     display: flex;
@@ -131,17 +127,95 @@ h1 {
     padding-right: 10px;
 }
 
+.text h1 {
+    font-weight: 700;
+}
 /* main section */
-.projects {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding: 15px;
+
+.content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: #f6f6f6;
+    padding-top: 30px;
+    gap: 20px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 05px;
 }
 
-.cards {
-    border: none;
-    border-top-left-radius: 10px yellow;
+.card {
+    border-left: 5px solid #facc15;
+    border-radius: 15px;
+    padding: 30px;
     background-color: white;
-    padding-top: 10px;
+    margin: 15px 0;
+    margin-left: 20px;
+    height: 200px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 15px;
+    padding-top: 70px;
+}
+
+.card p {
+    color: grey;
+}
+
+.projects h1 {
+    margin-left: 20px;
+}
+/*Annoucement*/
+.Ann-trend {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.ann-card,
+.trend-card {
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.ann-text p {
+    color: grey;
+}
+
+.ann-text {
+    padding: 10px 15px;
+    /*margin: 15px 0;*/
+}
+
+.heading-border {
+    width: 80%;
+    height: 2px;
+    background: grey;
+    margin: 0 auto 2rem;
+    opacity: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trend-image-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px;
+    padding: 15px 0;
+}
+
+.trend-text {
+    margin-left: 20px;
+}
+
+.trend-text h6 {
+    font-size: 14px;
 }
