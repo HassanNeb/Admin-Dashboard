@@ -41,7 +41,7 @@ img {
 
 .sidebar {
     background-color: #0ea5e9;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     min-width: 210px;
     padding-top: 20px;
